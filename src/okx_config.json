@@ -1,0 +1,14 @@
+{
+    "apiKey": "",
+    "secretKey": "",
+    "passphrase": "",
+    "endpoint": "https://www.okex.com/api/v5/asset/withdrawal",
+    "minWithdrawal": 0.003,
+    "maxWithdrawal": 0.004,
+    "waitTimeMin": 10,
+    "waitTimeMax": 20,
+    "fee": 0.0002,
+    "ccy": "ETH",
+    "chain": "ETH-Linea"
+}
+  

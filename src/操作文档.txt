@@ -1,0 +1,33 @@
+一、批量提笔操作
+1.请先配置wallet.txt和okx_config.json这两个文件
+2.wallet.txt用于存放钱包地址（记得设置白名单）
+3.okx_config.json用于配置自己的okx信息
+{
+    "apiKey": "", //okx
+    "secretKey": "", //okx
+    "passphrase": "", //okx
+    "endpoint": "https://www.okex.com/api/v5/asset/withdrawal", //不用管
+    "minWithdrawal": 0.003, //最小提币金额
+    "maxWithdrawal": 0.004, //最大提币金额
+    "waitTimeMin": 10, //最小等待时间，单位秒
+    "waitTimeMax": 20, //最大等待时间，单位秒
+    "fee": 0.0002, //eth手续费，好像固定了0.002，不用管
+    "ccy": "ETH", //币种
+    "chain": "ETH-Linea" //链名
+}
+4.最后双击run_okx.bat
+
+二、批量质押
+1.请先配置privateKeys.txt文件和config.json这两个文件
+2.privateKeys用于存放钱包的私钥地址
+3.config.json用于配置renzo质押相关参数
+{
+  "amountMin": 0.006, //最小质押金额
+  "amountMax": 0.013, //最大质押金额
+  "waitTimeMin": 1, //最小等待时间，单位秒
+  "waitTimeMax": 7, //最大等待时间，单位秒
+  "gasPrice": 200000000, //gasprice
+  "gasLimit": 3000000, //gaslimit
+  "chainName": "arb" //目前只支持arb和linea
+}
+4.最后双击run_script.bat

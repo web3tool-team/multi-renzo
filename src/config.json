@@ -1,0 +1,9 @@
+{
+  "amountMin": 0.006,
+  "amountMax": 0.013,
+  "waitTimeMin": 1,
+  "waitTimeMax": 7,
+  "gasPrice": 200000000,
+  "gasLimit": 3000000,
+  "chainName": "arb"
+}
